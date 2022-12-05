@@ -14,3 +14,7 @@ let Day1 = "1000
 9000
 
 10000"
+
+let Day2 = "A Y
+B X
+C Z"

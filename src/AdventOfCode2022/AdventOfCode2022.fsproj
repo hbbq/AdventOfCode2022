@@ -10,6 +10,7 @@
     <Compile Include="Inputs\PuzzleInputs.fs" />
     <Compile Include="Common\Common.fs" />
     <Compile Include="Days\Day1.fs" />
+    <Compile Include="Days\Day2.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
