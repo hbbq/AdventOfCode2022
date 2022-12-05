@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Inputs\SampleInputs.fs" />
+    <Compile Include="Inputs\PuzzleInputs.fs" />
+    <Compile Include="Common\Common.fs" />
+    <Compile Include="Days\Day1.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>
