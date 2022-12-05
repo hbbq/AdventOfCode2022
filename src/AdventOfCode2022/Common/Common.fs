@@ -4,9 +4,13 @@ let Words (s : string) =
     s.Replace("\t"," ").Split(' ')
     |> Array.filter (fun s -> s <> "")
 
-let Lines (s : string) =
-    s.Replace("\n", "\r").Split('\r')
+let AllLines (s : string) =
+    s.Replace("\n", "\r").Replace("\r\r", "\r").Split('\r')
     |> Array.map (fun s -> s.Trim())
+
+let Lines (s : string) =
+    s
+    |> AllLines
     |> Array.filter (fun s -> s <> "")
 
 let Chars =

@@ -3,4 +3,19 @@ module Day1
 
 let Problem1 (input : string) =
         
-    0
+    let groups = input.Replace("\n", "\r").Replace("\r\r", "\r").Split("\r\r")
+
+    let sum group =
+        group |> Common.Lines |> Array.map (int) |> Array.sum
+
+    groups |> Array.map sum |> Array.sortDescending |> Array.max
+
+
+let Problem2 (input : string) =
+
+    let groups = input.Replace("\n", "\r").Replace("\r\r", "\r").Split("\r\r")
+
+    let sum group =
+        group |> Common.Lines |> Array.map (int) |> Array.sum
+
+    groups |> Array.map sum |> Array.sortDescending |> Array.take 3 |> Array.sum

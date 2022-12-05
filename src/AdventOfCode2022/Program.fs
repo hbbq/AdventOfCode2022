@@ -70,6 +70,7 @@ let main argv =
         let Elapsed = watch.Elapsed
         Console.WriteLine()
         printfn "Result: %A" Result
+        
         printfn "Time:  %A" Elapsed
 
     Console.ReadKey() |> ignore
